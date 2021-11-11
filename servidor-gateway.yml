@@ -3,7 +3,6 @@ server:
 spring:
   cloud: 
    gateway:
-   
    default-filters:
         - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
       globalcors:
@@ -12,7 +11,6 @@ spring:
               allowedOrigins: "*"
               allowedMethods: "*"
               allowedHeaders: "*" 
-   
       routes:
       - id: serv-vuelos
           #lb:// cuando se va a acceder a través de Eureka
